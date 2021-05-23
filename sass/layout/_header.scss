@@ -1,0 +1,17 @@
+.page-haeder__conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.page-haeder {
+  border: 1px solid #ececec;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.page-haeder__nav {
+  margin-right: auto;
+}

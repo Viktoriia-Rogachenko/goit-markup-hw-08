@@ -1,0 +1,39 @@
+.auth-nav .link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav__icon {
+  display: flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}

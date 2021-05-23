@@ -1,0 +1,26 @@
+.address {
+  color: var(--bg-main-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+  display: inline-block;
+}
+
+.address__item--email,
+.address__item--tel {
+  color: var(--contacts-accent-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
