@@ -15,50 +15,94 @@
 
 <body>
     <!--Хедер-->
-    <!-- <header class="page-haeder">
+    <header class="page-haeder">
         <div class="conteiner page-haeder__conteiner">
-        <nav class="page-haeder__nav">
-    <a href="" class="logo">Web<span class="logo__text--back">Studio</span></a>
-            <ul class="list site-nav">
-                <li class="site-nav__item">
-                    <a href="" class="link list site-nav__link site-nav__link--active">Студия</a></li>
-                <li class="site-nav__item">
-                    <a href="./portfolio.html" class="link list site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item">
-                    <a href="" class="link list site-nav__link">Контакты</a></li>
-            </ul>
-        </nav>
+            <nav class="page-haeder__nav">
+        <a href="" class="logo">Web<span class="logo__text--back">Studio</span></a>
+                
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a href="" class="link list site-nav__link site-nav__link--active">Студия</a></li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link list site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item">
+                        <a href="" class="link list site-nav__link">Контакты</a></li>
+                </ul>
+               </nav>
 
-        <ul class="list auth-nav">
-            <li class="auth-nav__item">
-                <a href="mailto:info@devstudio.com" class="link auth-nav__link">
+            <ul class="list auth-nav">
+                <li class="auth-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link auth-nav__link">
+                        <svg class="auth-nav__icon">
+                            <use href="./images/icons/sprite.svg#icon-convert"></use>
+                        </svg>
+                    info@devstudio.com</a>
+                </li>
+
+                <li class="auth-nav__item"><a href="tel:+380961111111" class="link auth-nav__link">
                     <svg class="auth-nav__icon">
-                        <use href="./images/icons/sprite.svg#icon-convert"></use>
+                        <use href="./images/icons/sprite.svg#icon-tel"></use>
                     </svg>
-                info@devstudio.com</a>
-            </li>
-
-
-            <li class="auth-nav-item"><a href="tel:+380961111111" class="link auth-nav__link">
-                <svg class="auth-nav__icon">
-                    <use href="./images/icons/sprite.svg#icon-tel"></use>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul> 
+            <button type="button" class="button menu-button is-open" data-menu-button>
+                <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu-24px"></use>
+                    <use class="icon-close" href="./images/icons/sprite.svg#icon-close-24px"></use>
                 </svg>
-                +38 096 111 11 11</a>
-            </li>
-        </ul>
-        </div>
-    </header> -->
+            </button> 
+            </div>  
+    </header>
 
+  <div class="mobile-menu data-menu">
+                <ul class="list mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="link mobile-menu__link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="link list mobile-menu__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="link mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="list mobile-nav">
+                    <li class="link mobile-nav__item">
+                        <a href="mailto:info@devstudio.com" class="link mobile-nav__email">
+                            info@devstudio.com</a>
+                    </li>
+
+                    <li class="link mobile-nav__item"><a href="tel:+380961111111" class="link mobile-nav__tel">
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>            
+                    <ul class="list mobile-social__list">
+                            <li class="link mobile-social__item">
+                                <a href="" class="link mobile-social__link">Instagram</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">Twitter</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">Facebook</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">LinkedIn</a>
+                            </li>
+                    </ul>             
+        </div>  
     <!-- Майн -->
      <main>
 
         <!--Герой-->
-        <!-- <section class="section hero">
+        <section class="section hero">
             <div class="conteiner">
             <h1 class="hero__titel">Эффективные решения <br> для вашего бизнеса</h1>
             <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
 </div>
-        </section> -->
+        </section>
 
         <!--Наши преимущества-->
         <section class="section feature">
@@ -445,7 +489,7 @@
     </footer>
 
     <!--Модальное окно-->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__btn" data-modal-close>
                 <svg class="modal__icons-svg">
@@ -470,8 +514,7 @@
                         <input class="form__input" type="text" name="tel" id="tel">
                         <svg class="form__icons-svg">
                             <use href="./images/icons/sprite.svg#icon-phone-black"></use>
-                        </svg>
-                                             
+                        </svg>                   
                     </div>
                      
                     
@@ -500,7 +543,8 @@
             
             </form>
         </div>
-    </div> -->
+    </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

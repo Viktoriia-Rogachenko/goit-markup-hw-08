@@ -12,6 +12,16 @@
     url(../images/hero/bg.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .hero__titel {
@@ -19,11 +29,26 @@
   margin-bottom: 30px;
   color: var(--bg-main-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

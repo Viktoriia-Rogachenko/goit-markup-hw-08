@@ -25,6 +25,14 @@ ul {
   padding: 0;
 }
 
+.link {
+  list-style: none;
+  text-align: none;
+  text-decoration: none;
+  cursor: none;
+  padding: 0;
+}
+
 img {
   display: block;
   height: auto;
@@ -68,6 +76,7 @@ img {
 .button {
   list-style: none;
   border: none;
+  box-shadow: none;
   font: var(--main-font);
 }
 

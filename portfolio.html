@@ -11,43 +11,85 @@
 </head>
 <body>
 
-<!-- Хедер
+<!-- Хедер-->
 <header class="page-haeder">
-    <div class="conteiner page-haeder__conteiner">
-        <nav class="page-haeder__nav">
-            <a href="" class="logo">Web<span class="logo__text--back">Studio</span></a>
-            <ul class="list site-nav">
-                <li class="site-nav__item">
-                    <a href="./index.html" class="link list site-nav__link ">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="./portfolio.html" class="link list site-nav__link site-nav__link--active">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="" class="link list site-nav__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="conteiner page-haeder__conteiner">
+            <nav class="page-haeder__nav">
+        <a href="" class="logo">Web<span class="logo__text--back">Studio</span></a>
+                
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link list site-nav__link site-nav__link--active">Студия</a></li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link list site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item">
+                        <a href="" class="link list site-nav__link">Контакты</a></li>
+                </ul>
+               </nav>
 
-        <ul class="list auth-nav">
-            <li class="auth-nav__item">
-                <a href="mailto:info@devstudio.com" class="link auth-nav__link">
-                    <svg class="auth-nav__icon">
-                        <use href="./images/icons/sprite.svg#icon-convert"></use>
-                    </svg>
+            <ul class="list auth-nav">
+                <li class="auth-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link auth-nav__link">
+                        <svg class="auth-nav__icon">
+                            <use href="./images/icons/sprite.svg#icon-convert"></use>
+                        </svg>
                     info@devstudio.com</a>
-            </li>
+                </li>
 
-
-            <li class="auth-nav-item"><a href="tel:+380961111111" class="link auth-nav__link">
+                <li class="auth-nav__item"><a href="tel:+380961111111" class="link auth-nav__link">
                     <svg class="auth-nav__icon">
                         <use href="./images/icons/sprite.svg#icon-tel"></use>
                     </svg>
                     +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header> -->
+                </li>
+            </ul> 
+            <button type="button" class="button menu-button is-open" data-menu-button>
+                <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu-24px"></use>
+                    <use class="icon-close" href="./images/icons/sprite.svg#icon-close-24px"></use>
+                </svg>
+            </button> 
+            </div>  
+    </header>
+
+  <div class="mobile-menu data-menu">
+                <ul class="list mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="link mobile-menu__link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="link list mobile-menu__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="link mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="list mobile-nav">
+                    <li class="link mobile-nav__item">
+                        <a href="mailto:info@devstudio.com" class="link mobile-nav__email">
+                            info@devstudio.com</a>
+                    </li>
+
+                    <li class="link mobile-nav__item"><a href="tel:+380961111111" class="link mobile-nav__tel">
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>            
+                    <ul class="list mobile-social__list">
+                            <li class="link mobile-social__item">
+                                <a href="" class="link mobile-social__link">Instagram</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">Twitter</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">Facebook</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="link mobile-social__link">LinkedIn</a>
+                            </li>
+                    </ul>             
+        </div>  
 
 <!--Мейн-->
 <main>
@@ -76,6 +118,7 @@
             <p class="text">Веб-сайт</p>
             </div>
         </li>
+        
         <li class="item portfolio-item">
             <div class="overlay">  
                 <img class="overlay__img" src="./images/Portfolio/img-2.jpg" width="370" alt="волейболисті забрасывают мяч">
@@ -86,6 +129,7 @@
             <p class="text">Дизайн</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
            <div class="overlay"> 
                 <img class="overlay__img"  src="./images/Portfolio/img-3.jpg" width="370" alt="лого ресторана морской кухни">

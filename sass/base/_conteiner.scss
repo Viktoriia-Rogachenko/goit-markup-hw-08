@@ -5,20 +5,15 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  background-color: aqua;
-
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-color: coral;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    background-color: lightgreen;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    background-color: lightyellow;
   }
 }

@@ -1,9 +1,11 @@
 .page-haeder__conteiner {
   display: flex;
   align-items: center;
+  padding: 0px;
 }
 
 .page-haeder {
+  position: relative;
   border: 1px solid #ececec;
   border-top: none;
   border-left: none;
@@ -13,5 +15,6 @@
 }
 
 .page-haeder__nav {
+  display: flex;
   margin-right: auto;
 }

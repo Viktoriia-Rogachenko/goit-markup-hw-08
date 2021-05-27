@@ -27,6 +27,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
@@ -34,6 +35,7 @@
 
 .team__photo {
   display: block;
+  width: 100%;
 }
 
 .team__meta {
@@ -58,7 +60,7 @@
 }
 
 .team__profession {
-  font-size: 16px;
+  font-size: 16x;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;

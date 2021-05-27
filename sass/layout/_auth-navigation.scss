@@ -14,7 +14,12 @@
 }
 
 .auth-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .auth-nav__item {
@@ -22,6 +27,7 @@
 
   &:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 10px;
   }
 }
 
