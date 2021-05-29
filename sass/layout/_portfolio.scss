@@ -23,9 +23,9 @@
     margin-bottom: 30px;
     justify-content: center;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-    justify-content: center;
     justify-content: center;
   }
 }
@@ -44,6 +44,8 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 15px;
 
   border-radius: 4px;
   margin-right: 8px;
@@ -108,15 +110,10 @@
   border-top: none;
   box-sizing: border-box;
   padding: 20px 24px 20px 24px;
-  width: 354px;
 }
 
 .overlay__img {
   display: block;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
 }
 
 .border__title {
@@ -130,6 +127,7 @@
 .portfolio__card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .portfolio__item {

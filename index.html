@@ -55,10 +55,10 @@
             </div>  
     </header>
 
-  <div class="mobile-menu data-menu">
-                <ul class="list mobile-menu__list">
+  <div class="mobile-menu" data-menu>
+                   <ul class="list mobile-menu__list">
                     <li class="mobile-menu__item">
-                        <a href="" class="link mobile-menu__link">Студия</a>
+                        <a href="./index.html" class="link mobile-menu__link mobile-menu__link--active">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="./portfolio.html" class="link list mobile-menu__link">Портфолио</a>
@@ -91,8 +91,10 @@
                             <li class="mobile-social__item">
                                 <a href="" class="link mobile-social__link">LinkedIn</a>
                             </li>
-                    </ul>             
+                    </ul> 
+                 
         </div>  
+
     <!-- Майн -->
      <main>
 
@@ -165,19 +167,59 @@
                 <ul class="list card-set our-work">
                     <li class="item our-work__item">
                         <div class="our-work__thumb">
-                            <img src="./images/box-1.jpg" width="370" alt="мужчина печатает на клавиатуре код">
-                            <p class="our-work__text">Десктопные приложения</p>
+                            <picture>
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop1.webp 1x, ./images/gallery/desktop/what-we-do/box-desktop1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                                       
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop1.jpg 1x, ./images/gallery/desktop/what-we-do/box-desktop1@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg" />
+                               
+                            
+                                <img src="./images/gallery/desktop/what-we-do/box-desktop1.jpg" width="370" height="294"
+                                    alt="мужчина в очках с ухмылкой">
+                            </picture>
+                                <p class="our-work__text">Десктопные приложения</p>
                         </div>
                     </li>
+
                     <li class="item our-work__item">
                         <div class="our-work__thumb">
-                        <img src="./images/box-2.jpg" width="370" alt="девушка сравнивает телефон в своих руках с изображением на мониторе">
+                            <picture>
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop2.webp 1x, ./images/gallery/desktop/what-we-do/box-desktop2@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                            
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop2.jpg 1x, ./images/gallery/desktop/what-we-do/box-desktop2@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                            
+                                <img src="./images/gallery/desktop/what-we-do/box-desktop2.jpg" width="370" height="294"
+                                    alt="девушка сравнивает телефон в своих руках с изображением на мониторе">
+                            </picture>
+                        
                         <p class="our-work__text">Мобильные приложения</p>
                     </div>
-                </li>
+                    </li>
+
                     <li class="item our-work__item">
                         <div class="our-work__thumb">
-                        <img src="./images/box-3.jpg" width="370" alt="девушка смотрит цветовую палитру на планшете">
+                            <picture>
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop3.webp 1x, ./images/gallery/desktop/what-we-do/box-desktop3@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                            
+                                <source
+                                    srcset="./images/gallery/desktop/what-we-do/box-desktop3.jpg 1x, ./images/gallery/desktop/what-we-do/box-desktop3@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                            
+                                <img src="./images/gallery/desktop/what-we-do/box-desktop3.jpg" width="370" height="294"
+                                    alt="девушка смотрит цветовую палитру на планшете">
+                            </picture>
+                        
                         <p class="our-work__text">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -191,8 +233,32 @@
             <h2 class="section__title">Наша команда</h2>
                 <ul class="team list card-set">
                     <li class="item team__item">
-                        <img class="team__photo" src="./images/img-1.jpg" width="270" alt="улыбаущийся мужчина в очках">
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-1.webp 1x, ./images/gallery/desktop/team/ourteam-desktop-1@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                              <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet1.webp 1x, ./images/gallery/tablet/team/ourteam-tablet1@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />    
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile1.webp 1x, ./images/gallery/mobile/team/ourteam-mobile1@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                          
                         
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-1.jpg 1x, ./images/gallery/desktop/team/ourteam-desktop-1@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                             <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet1.jpg 1x, ./images/gallery/tablet/team/ourteam-tablet1@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />    
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile1.jpg 1x, ./images/gallery/mobile/team/ourteam-mobile1@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                           
+                            <img class="overlay__img" src="./images/gallery/mobile/team/ourteam-mobile1.jpg" width="450" height="460"
+                                alt="улыбаущийся мужчина в очках">
+                        </picture>
+                                            
                         <div class="team__meta">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__profession">Product Designer</p>
@@ -234,8 +300,33 @@
                         
                     
                     </li>
+
                     <li class="item team__item">
-                        <img class="team__photo" src="./images/img-2.jpg" width="270" alt="блондинка в очках">
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-2.webp 1x, ./images/gallery/desktop/team/ourteam-desktop-2@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet2.webp 1x, ./images/gallery/tablet/team/ourteam-tablet2@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile2.webp 1x, ./images/gallery/mobile/team/ourteam-mobile2@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                        
+                        
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-2.jpg 1x, ./images/gallery/desktop/team/ourteam-desktop-2@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet2.jpg 1x, ./images/gallery/tablet/team/ourteam-tablet2@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile2.jpg 1x, ./images/gallery/mobile/team/ourteam-mobile2@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                        
+                            <img class="overlay__img" src="./images/gallery/mobile/team/ourteam-mobile2.jpg" width="450" height="460"
+                                alt="блондинка в очках">
+                        </picture>
                             <div class="team__meta">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__profession">Frontend Developer</p>
@@ -274,9 +365,34 @@
                             </ul>
                         </div>
                     </li>
+
                     <li class="item team__item">
-                        <img class="team__photo" src="./images/img-3.jpg" width="270" alt="мужчина в голубой рубашке">
-                        <div class="team__meta">
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-3.webp 1x, ./images/gallery/desktop/team/ourteam-desktop-3@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet3.webp 1x, ./images/gallery/tablet/team/ourteam-tablet3@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile3.webp 1x, ./images/gallery/mobile/team/ourteam-mobile3@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                        
+                        
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-3.jpg 1x, ./images/gallery/desktop/team/ourteam-desktop-3@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet3.jpg 1x, ./images/gallery/tablet/team/ourteam-tablet3@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile3.jpg 1x, ./images/gallery/mobile/team/ourteam-mobile3@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                        
+                            <img class="overlay__img" src="./images/gallery/mobile/team/ourteam-mobile3.jpg" width="450" height="460"
+                                alt="мужчина в голубой рубашке">
+                        </picture>
+                            <div class="team__meta">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__profession">Marketing</p>
 
@@ -314,8 +430,34 @@
                             </ul>
                         </div>
                     </li>
+
                     <li class="item team__item">
-                        <img class="team__photo" src="./images/img-4.jpg" width="270" alt="мужчина в очках с ухмылкой">
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-4.webp 1x, ./images/gallery/desktop/team/ourteam-desktop-4@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet4.webp 1x, ./images/gallery/tablet/team/ourteam-tablet4@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile4.webp 1x, ./images/gallery/mobile/team/ourteam-mobile4@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                        
+                        
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-desktop-4.jpg 1x, ./images/gallery/desktop/team/ourteam-desktop-4@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-tablet4.jpg 1x, ./images/gallery/tablet/team/ourteam-tablet4@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-mobile4.jpg 1x, ./images/gallery/mobile/team/ourteam-mobile4@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                        
+                            <img class="overlay__img" src="./images/gallery/mobile/team/ourteam-mobile4.jpg" width="450" height="460"
+                                alt="мужчина в очках с ухмылкой">
+                        </picture>
+                        
                         <div class="team__meta">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__profession">UI Designer</p>

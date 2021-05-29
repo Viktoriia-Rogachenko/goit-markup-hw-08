@@ -19,9 +19,9 @@
                 
                 <ul class="list site-nav">
                     <li class="site-nav__item">
-                        <a href="./index.html" class="link list site-nav__link site-nav__link--active">Студия</a></li>
+                        <a href="./index.html" class="link list site-nav__link">Студия</a></li>
                     <li class="site-nav__item">
-                        <a href="./portfolio.html" class="link list site-nav__link">Портфолио</a></li>
+                        <a href="./portfolio.html" class="link list site-nav__link site-nav__link--active">Портфолио</a></li>
                     <li class="site-nav__item">
                         <a href="" class="link list site-nav__link">Контакты</a></li>
                 </ul>
@@ -43,6 +43,7 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul> 
+
             <button type="button" class="button menu-button is-open" data-menu-button>
                 <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
                     <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu-24px"></use>
@@ -51,11 +52,49 @@
             </button> 
             </div>  
     </header>
+    <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="link list mobile-menu__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="list mobile-nav">
+            <li class="link mobile-nav__item">
+                <a href="mailto:info@devstudio.com" class="link mobile-nav__email">
+                    info@devstudio.com</a>
+            </li>
+    
+            <li class="link mobile-nav__item"><a href="tel:+380961111111" class="link mobile-nav__tel">
+                    +38 096 111 11 11</a>
+            </li>
+        </ul>
+        <ul class="list mobile-social__list">
+            <li class="link mobile-social__item">
+                <a href="" class="link mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="link mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="link mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="link mobile-social__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
 
-  <div class="mobile-menu data-menu">
+  <div class="mobile-menu" data-menu>
                 <ul class="list mobile-menu__list">
                     <li class="mobile-menu__item">
-                        <a href="" class="link mobile-menu__link">Студия</a>
+                        <a href="./index.html" class="link mobile-menu__link">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="./portfolio.html" class="link list mobile-menu__link">Портфолио</a>
@@ -107,9 +146,31 @@
        
     <ul class="card-set portfolio__card-set">
         <li class="item portfolio__item">
-            
-                <div class="overlay">
-                    <img class="overlay__img" src="./images/Portfolio/img-1.jpg" width="370" alt="монитор экрана с иконками лиц">
+                 <div class="overlay">
+                    <picture>
+                        <source
+                            srcset="./images/gallery/desktop/portfolio/portfolio-desktop1.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop1@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" />
+                          <source
+                            srcset="./images/gallery/tablet/portfolio/portfolio-tablet1.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet1@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp" />   
+                        <source
+                            srcset="./images/gallery/mobile/portfolio/portfolio-mobile1.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile1@2x.webp 2x"
+                            media="(max-width: 767.98px)" type="image/webp" />
+                       
+
+                        <source 
+                            srcset="./images/gallery/desktop/portfolio/portfolio-desktop1.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop1@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+                         <source
+                            srcset="./images/gallery/tablet/portfolio/portfolio-tablet1.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet1@2x.jpg 2x"
+                            media="(min-width: 768px)" type="image/jpeg" />
+                        <source
+                            srcset="./images/gallery/mobile/portfolio/portfolio-mobile1.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile1@2x.jpg 2x"
+                            media="(max-width: 767.98px)" type="image/jpeg" />
+                       
+                        <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile1.jpg" width="450" height="294"
+                            alt="монитор экрана с иконками лиц">
+                    </picture>                                                            
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                 шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -121,8 +182,32 @@
         
         <li class="item portfolio-item">
             <div class="overlay">  
-                <img class="overlay__img" src="./images/Portfolio/img-2.jpg" width="370" alt="волейболисті забрасывают мяч">
-                 <p class="overlay__text"></p>
+                <picture>
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop2.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop2@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp" />
+                    <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet2.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet2@2x.webp 2x"
+                        media="(min-width: 768px)" type="image/webp" />    
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile2.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile2@2x.webp 2x"
+                        media="(max-width: 767.98px)" type="image/webp" />
+                    
+                
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop2.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop2@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                     <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet2.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet2@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />   
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile2.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile2@2x.jpg 2x"
+                        media="(max-width: 767.98px)" type="image/jpeg" />
+                    
+                    <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile2.jpg" width="450" height="294"
+                        alt="волейболисты забрасывают мяч">
+                </picture>
+                <p class="overlay__text"></p>
             </div>
             <div class="border">
             <h3 class="border__title">Постер New Orlean vs Golden Star</h3>
@@ -132,7 +217,31 @@
 
         <li class="item portfolio-item">
            <div class="overlay"> 
-                <img class="overlay__img"  src="./images/Portfolio/img-3.jpg" width="370" alt="лого ресторана морской кухни">
+                <picture>
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop3.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop3@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp" />
+                     <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet3.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet3@2x.webp 2x"
+                        media="(min-width: 768px)" type="image/webp" />    
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile3.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile3@2x.webp 2x"
+                        media="(max-width: 767.98px)" type="image/webp" />
+                   
+                
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop3.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop3@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                    <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet3.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet3@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />    
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile3.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile3@2x.jpg 2x"
+                        media="(max-width: 767.98px)" type="image/jpeg" />
+                    
+                    <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile3.jpg" width="450" height="294"
+                        alt="монитор экрана с иконками лиц">
+                </picture>
                 <p class="overlay__text"></p>
         </div>
             <div class="border">
@@ -140,10 +249,34 @@
             <p class="text">Приложение</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
             <div class="overlay">
+        <picture>
+            <source
+                srcset="./images/gallery/desktop/portfolio/portfolio-desktop4.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop4@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp" />
+             <source
+                srcset="./images/gallery/tablet/portfolio/portfolio-tablet4.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet4@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp" />   
+            <source
+                srcset="./images/gallery/mobile/portfolio/portfolio-mobile4.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile4@2x.webp 2x"
+                media="(max-width: 767.98px)" type="image/webp" />
+            
+        
+            <source
+                srcset="./images/gallery/desktop/portfolio/portfolio-desktop4.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop4@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpeg" />
+             <source
+                srcset="./images/gallery/tablet/portfolio/portfolio-tablet4.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet4@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg" />    
+            <source
+                srcset="./images/gallery/mobile/portfolio/portfolio-mobile4.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile4@2x.jpg 2x"
+                media="(max-width: 767.98px)" type="image/jpeg" />
            
-            <img class="overlay__img" src="./images/Portfolio/img-4.jpg" width="370" alt="найшники">
+            <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile4.jpg" width="450" height="294"
+                alt="найшники">
+        </picture>
             <p class="overlay__text"></p>
         </div>
             <div class="border">
@@ -151,20 +284,69 @@
             <p class="text">Маркетинг</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
            <div class="overlay">
-            <img class="overlay__img" src="./images/Portfolio/img-5.jpg" width="370" alt="2 коробки">
-            <p class="overlay__text"></p>
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop5.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop5@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet5.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet5@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile5.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile5@2x.webp 2x"
+                    media="(max-width: 767.98px)" type="image/webp" />
+                
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop5.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop5@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpeg" />
+                  <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet5.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet5@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile5.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile5@2x.jpg 2x"
+                    media="(max-width: 767.98px)" type="image/jpeg" />
+              
+                <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile5.jpg" width="450" height="294"
+                    alt="2 коробки">
+            </picture>
+                <p class="overlay__text"></p>
         </div>
             <div class="border">
             <h3 class="border__title">Inspiration has no Borders</h3>
             <p class="text">Веб-сайт</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
             <div class="overlay">
-            
-                <img class="overlay__img" src="./images/Portfolio/img-6.jpg" width="370" alt="монитор экрана">
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop6.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop6@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                 <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet6.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet6@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile6.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile6@2x.webp 2x"
+                    media="(max-width: 767.98px)" type="image/webp" />
+               
+                         
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop6.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop5@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpeg" />
+                <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet6.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet5@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile6.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile5@2x.jpg 2x"
+                    media="(max-width: 767.98px)" type="image/jpeg" />
+                
+                <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile6.jpg" width="450" height="294"
+                    alt="монитор экрана">
+            </picture>
+
                 <p class="overlay__text"></p>
             </div>
                 <div class="border">
@@ -172,20 +354,70 @@
                 <p class="text">Веб-сайт</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
             <div class="overlay">
-            <img class="overlay__img" src="./images/Portfolio/img-7.jpg" width="370" alt="открытая книга">
-        <p class="overlay__text"></p>
+                <picture>
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop7.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop7@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp" />
+                    <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet7.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet7@2x.webp 2x"
+                        media="(min-width: 768px)" type="image/webp" />    
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile9.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile7@2x.webp 2x"
+                        media="(max-width: 767.98px)" type="image/webp" />
+                
+                                
+                    <source
+                        srcset="./images/gallery/desktop/portfolio/portfolio-desktop7.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop7@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                     <source
+                        srcset="./images/gallery/tablet/portfolio/portfolio-tablet7.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet7@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />   
+                    <source
+                        srcset="./images/gallery/mobile/portfolio/portfolio-mobile7.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile7@2x.jpg 2x"
+                        media="(max-width: 767.98px)" type="image/jpeg" />
+                    
+                    <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile7.jpg" width="450" height="294"
+                        alt="открытая книга">
+                </picture>
+                   <p class="overlay__text"></p>
         </div>
             <div class="border">
             <h3 class="border__title">Издание Limited Edition</h3>
                 <p class="text">Дизайн</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
             <div class="overlay">
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop8.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop8@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                 <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet8.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet8@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile8.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile8@2x.webp 2x"
+                    media="(max-width: 767.98px)" type="image/webp" />
+               
+                           
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop8.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop8@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpeg" />
+                 <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet8.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet8@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg" />    
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile8.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile8@2x.jpg 2x"
+                    media="(max-width: 767.98px)" type="image/jpeg" />
+               
+                <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile8.jpg" width="450" height="294"
+                    alt="лейбл">
+            </picture>
             
-            <img class="overlay__img" src="./images/Portfolio/img-8.jpg" width="370" alt="лейбл">
             <p class="overlay__text"></p>
         </div>
             <div class="border">
@@ -193,17 +425,40 @@
             <p class="text">Маркетинг</p>
             </div>
         </li>
+
         <li class="item portfolio-item">
             <div class="overlay">
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop9.webp 1x, ./images/gallery/desktop/portfolio/portfolio-desktop9@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile9.webp 1x, ./images/gallery/mobile/portfolio/portfolio-mobile9@2x.webp 2x"
+                    media="(max-width: 767.98px)" type="image/webp" />
+                <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet9.webp 1x, ./images/gallery/tablet/portfolio/portfolio-tablet9@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
             
-            <img class="overlay__img" src="./images/Portfolio/img-9.jpg" width="370" alt="печатающий человек на ноутбуке">
-        <p class="overlay__text"></p>
+                <source
+                    srcset="./images/gallery/desktop/portfolio/portfolio-desktop9.jpg 1x, ./images/gallery/desktop/portfolio/portfolio-desktop9@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpeg" />
+                <source
+                    srcset="./images/gallery/mobile/portfolio/portfolio-mobile9.jpg 1x, ./images/gallery/mobile/portfolio/portfolio-mobile9@2x.jpg 2x"
+                    media="(max-width: 767.98px)" type="image/jpeg" />
+                <source
+                    srcset="./images/gallery/tablet/portfolio/portfolio-tablet9.jpg 1x, ./images/gallery/tablet/portfolio/portfolio-tablet9@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg" />
+                <img class="overlay__img" src="./images/gallery/mobile/portfolio/portfolio-mobile9.jpg" width="450" height="294"
+                    alt="печатающий человек на ноутбуке">
+            </picture>
+                 <p class="overlay__text"></p>
         </div>
             <div class="border">
             <h3 class="border__title">Growing Business</h3>
             <p class="text">Приложение</p>
             </div>
         </li>
+
     </ul>
     </div>
     </section>
@@ -281,6 +536,6 @@
         </div>
     </div>
 </footer>
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
