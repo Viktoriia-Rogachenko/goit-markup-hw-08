@@ -98,7 +98,6 @@
   width: 40px;
   height: 40px;
   margin: 0;
-  padding: 0;
   border-color: none;
   background-color: transparent;
   cursor: pointer;
@@ -109,9 +108,17 @@
   }
 }
 
-.menu-button.is-open .icon-close {
+.menu-button-inside {
+  position: absolute;
+  display: inline-flex;
+  right: 2%;
+  top: 2%;
+}
+
+.is-open .icon-close {
   display: none;
 }
+
 .icon-menu {
   display: none;
 

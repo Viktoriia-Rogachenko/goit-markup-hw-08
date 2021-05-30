@@ -303,7 +303,6 @@ p {
   width: 40px;
   height: 40px;
   margin: 0;
-  padding: 0;
   border-color: none;
   background-color: transparent;
   cursor: pointer;
@@ -315,7 +314,14 @@ p {
   }
 }
 
-.menu-button.is-open .icon-close {
+.menu-button-inside {
+  position: absolute;
+  display: inline-flex;
+  right: 2%;
+  top: 2%;
+}
+
+.is-open .icon-close {
   display: none;
 }
 
@@ -414,6 +420,7 @@ p {
 }
 
 .hero {
+  position: relative;
   background-color: var(--bg-secondary-color);
   font-family: inherit;
   text-align: center;
