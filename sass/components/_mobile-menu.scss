@@ -126,3 +126,11 @@
     display: block;
   }
 }
+
+.menu-button-inside .icon-close {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}

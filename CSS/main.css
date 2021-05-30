@@ -332,6 +332,13 @@ p {
   display: block;
 }
 
+.menu-button-inside .icon-close {
+  display: none;
+}
+.is-open .menu-button-inside .icon-close {
+  display: block;
+}
+
 .site-nav {
   display: none;
 }
