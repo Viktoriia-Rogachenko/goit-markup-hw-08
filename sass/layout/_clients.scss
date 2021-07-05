@@ -1,3 +1,8 @@
+.conteiner__our-clients {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .our-clients__icons {
   display: flex;
   flex-wrap: wrap;
@@ -23,9 +28,7 @@
 }
 
 .our-clients__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin: 15px;
 }
 
 .our-clients__link {
@@ -37,9 +40,10 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  margin-right: 0;
 
   @media screen and (min-width: 480px) {
-    width: 170px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
